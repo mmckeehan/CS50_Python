@@ -68,6 +68,7 @@ your name;
 your GitHub and edX usernames;
 your city and country;
 and, the date you have recorded this video.
+
 It should then go on to demonstrate your project in action, as with slides, screenshots, voiceover, and/or live action. See howtogeek.com/205742/how-to-record-your-windows-mac-linux-android-or-ios-screen for tips on how to make a “screencast,” though you’re welcome to use an actual camera. Upload your video to YouTube (or, if blocked in your country, a similar site) and take note of its URL; it’s fine to flag it as “unlisted,” but don’t flag it as “private.”
 
 Submit this form!
