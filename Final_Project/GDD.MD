@@ -1,13 +1,20 @@
 # Definantly not Space Invaders!
 
-# Concept
-    This is goign to be a simple shooter.
+## Concept
+    This is goign to be a simple game where you will avoid obsticles.
 
-# Inspirations
+## Inspirations
     1942, Space Invaders
 
-# Mechanics
-    You will be able to move left, right, up, down with w,s,a,d respectively. Space will allow you to shoot your SPACE CANNONS!!!
+## Mechanics
+    You will be able to move up, down, left, right with w,s,a,d respectively.
 
-# Libraries Used
+## Libraries Used
     pygame
+    sys
+    random
+
+## Future Enhancements
+    Add bullet system
+    Spawn Random sized Asteroids
+    Add shooting enemy
