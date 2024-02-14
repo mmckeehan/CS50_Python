@@ -26,10 +26,10 @@ def main():
     ##################### Player Variables #####################
     player_hp = 3
     player_sprite = pygame.transform.scale2x(
-        pygame.image.load("sprites\\player_anim1.png").convert_alpha()
+        pygame.image.load("sprites/player_anim1.png").convert_alpha()
     )
     player_position = pygame.Vector2(
-        (screen.get_width() / 2) - 32, (screen.get_height() - 100)
+        (screen.get_width() / 2), (screen.get_height() - 100)
     )
     player_rect = player_sprite.get_rect(center = player_position)
     player_speed = 250
@@ -38,10 +38,10 @@ def main():
 
     ##################### Enemy Variables #####################
     asteroid_sprite = pygame.transform.scale2x(
-        pygame.image.load("sprites\\asteroid.png").convert_alpha()
+        pygame.image.load("sprites/asteroid.png").convert_alpha()
     )
     asteroid_position = pygame.Vector2(
-        (screen.get_width() / 2) + 70, (screen.get_height() - 200)
+        (randint(0,500),-30)
     )
     asteroid_rect = asteroid_sprite.get_rect(center = asteroid_position)
     asteroid_speed = 5
@@ -49,7 +49,6 @@ def main():
     ##################### Game Variables #####################
     enemy_destroyed = 0
     score_font = pygame.font.Font(None, 50)
-
 
 
     ##################### Main Game Loop #####################
@@ -93,6 +92,7 @@ def main():
         player_controls(player_rect, delta_time, player_speed)
 
 
+
         # Colision
         player_i_frames -= 1 * delta_time
         print(player_i_frames)
@@ -112,9 +112,6 @@ def main():
 
         pygame.display.flip()
         delta_time = clock.tick(60) / 1000
-
-    if not game_active:
-        game_quit()
 
 def score(time, enemy_destroyed):
     total_score = time + (enemy_destroyed * 10)
